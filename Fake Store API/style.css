@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+  width: 95%;
+  margin: auto;
+  font-family: "League Spartan", sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+.products-list {
+  margin-block: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 40px;
+}
+h1 {
+  font-size: 42px;
+  margin-top: 20px;
+}
+p {
+  font-size: 18px;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 5px 0 8px rgb(20 19 19 / 55%);
+}
+.productImage {
+  height: 400px;
+  width: 400px;
+}
+@media (max-width: 950px) {
+  .products-list {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .product {
+    width: 100%;
+  }
+  .productImage {
+    width: 300px;
+    height: 300px;
+  }
+}

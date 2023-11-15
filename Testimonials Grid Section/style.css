@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+:root {
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: var(--Light-grayish-blue);
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+.image img {
+  aspect-ratio: 1;
+  width: 70%;
+  border-radius: 50%;
+}
+.name-info .name {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--Light-gray);
+}
+
+.name-info .position {
+  font-size: 0.875rem;
+  color: var(--Light-gray);
+  opacity: 0.5;
+}
+.name-info .harmon,
+.name-info .kira {
+  color: var(--Very-dark-grayish-blue);
+}
+.name-info .text {
+  opacity: 0.5;
+  color: var(--Very-dark-grayish-blue);
+}
+.testimonials > p:last-of-type {
+  font-size: 1rem;
+  opacity: 0.7;
+  color: var(--Light-gray);
+}
+.testimonials.testimonials:nth-child(3) > p:last-of-type,
+.testimonials.testimonials:nth-child(5) > p:last-of-type {
+  color: var(--Very-dark-grayish-blue);
+  opacity: 0.7;
+}
+.experience {
+  margin: 1.25rem 0;
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: var(--White);
+}
+.experience.kira,
+.experience.harmon {
+  color: var(--Very-dark-grayish-blue);
+}
+
+.testimonial-grid {
+  display: grid;
+  gap: 1.5rem;
+  padding-block: 3rem;
+  width: min(95%, 70rem);
+  margin: auto;
+}
+@media (min-width: 735px) {
+  .testimonial-grid {
+    padding-block: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-col-span {
+    grid-column: span 2;
+  }
+  .testimonials:nth-child(5) {
+    grid-column-start: 4;
+    grid-row: 1 / span 2;
+  }
+}
+
+.testimonials.quote {
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 20%;
+}
+
+.testimonials {
+    
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 1.5rem 1.75rem 3rem -3rem var(--Very-dark-grayish-blue);
+}
+.testimonial-content {
+  display: flex;
+  gap: 0.375rem;
+}
+.testimonials:nth-child(1) {
+  background-color: var(--Moderate-violet);
+}
+
+.testimonials:nth-child(2) {
+  background-color: var(--Very-dark-grayish-blue);
+}
+.testimonials:nth-child(3) {
+  background-color: var(--White);
+}
+.testimonials:nth-child(4) {
+  background-color: var(--Very-dark-blackish-blue);
+}
+.testimonials:nth-child(5) {
+  background-color: var(--White);
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | URL shortening API </title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./main.js"></script>
+</head>
+
+<body>
+
+  <div class="navbar">
+
+    <div class="site-name">
+      Shortly
+    </div>
+    <input type="checkbox" class="menu" name="menu" id="menu">
+    <label for="menu"></label>
+    <nav class="nav">
+      <ul class="nav-items">
+        <li class="nav-item">
+          <a href="#Features" class="nav-link">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#Pricing" class="nav-link">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a href="#Resources" class="nav-link">Resources</a>
+        </li>
+      </ul>
+
+      <ul class="nav-buttons">
+        <li class="nav-item">
+          <a href="#Login" class="nav-link">Login</a>
+        </li>
+        <li class="nav-item">
+          <a href="#Sign Up" class="btn-round btn">Sign Up</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <header class="header">
+
+    <div class="header-text-box">
+      <h1 class="heading-primary">
+        More than just shorter links
+      </h1>
+      <p class="header-text">
+        Build your brand's recognition and get detailed insights on how your links are performing.
+      </p>
+      <a href="#Get Started" class="header-cta btn-round btn ">Get Started</a>
+    </div>
+
+    <img src="./images/illustration-working.svg" alt="Girl working on laptop" class="header-image">
+
+  </header>
+
+  <main class="main">
+    <section class="links">
+
+      <form action="#" class="link-input-box" id="user-form">
+        <input type="text" class="user-link" id="user-link" placeholder="Shorten a link here..." />
+        <label class="user-link-label" for="user-link">Please add a link</label>
+        <button class="btn-rect btn submit-btn">Shorten it!</button>
+      </form>
+
+
+      <div class="link-output-boxes">
+
+      </div>
+
+    </section>
+
+    <section class="statistics">
+
+      <div class="statistics-text-box">
+        <h2 class="heading-secondary">
+          Advanced Statistics
+        </h2>
+        <p class="statistics-text">
+          Track how your links are performing across the web with our advanced statistics dashboard.
+        </p>
+      </div>
+
+      <div class="statistics-info">
+
+        <hr class="statistics-line">
+
+        <figure class="statistic-box statistic-box-1">
+          <div class="statistic-image">
+            <img src="./images/icon-brand-recognition.svg" alt="icon-brand-recognition" class="statistic-img">
+          </div>
+          <figcaption>Brand Recognition</figcaption>
+          <p class="statistic-info-1">
+            Boost your brand recognition with each click. Generic links don’t
+            mean a thing. Branded links help instil confidence in your content.
+          </p>
+        </figure>
+
+        <figure class="statistic-box statistic-box-2">
+          <div class="statistic-image">
+            <img src="./images/icon-detailed-records.svg" alt="icon-detailed-records" class="statistic-img">
+          </div>
+          <figcaption>Detailed Records</figcaption>
+          <p class="statistic-info-2">
+            Gain insights into who is clicking your links. Knowing when and where
+            people engage with your content helps inform better decisions.
+          </p>
+        </figure>
+
+        <figure class="statistic-box statistic-box-3">
+          <div class="statistic-image">
+            <img src="./images/icon-fully-customizable.svg" alt="icon-fully-customizable" class="statistic-img">
+          </div>
+          <figcaption>Fully Customizable</figcaption>
+          <p class="statistic-info-3">
+            Improve brand awareness and content discoverability through customizable
+            links, supercharging audience engagement.
+          </p>
+        </figure>
+
+      </div>
+    </section>
+
+    <section class="boost">
+      <h2 class="heading-secondary">
+        Boost your links today
+      </h2>
+      <a href="#Get-Started" class="btn-round btn">Get Started</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="site-name">
+      Shortly
+    </div>
+
+    <div class="site-features">
+      <p class="headers">Features</p>
+      <ul class="features-list">
+        <li class="features-item">
+          <a href="#Link Shortening" class="features-link">Link Shortening</a>
+        </li>
+        <li class="features-item">
+          <a href="#Branded Links" class="features-link">Branded Links</a>
+        </li>
+        <li class="features-item">
+          <a href="#Analytics" class="features-link">Analytics</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="site-resources">
+      <p class="headers">Resources</p>
+      <ul class="resources-list">
+        <li class="resources-item">
+          <a href="#Blog" class="resources-link">Blog</a>
+        </li>
+        <li class="resources-item">
+          <a href="#Developers" class="resources-link">Developers</a>
+        </li>
+        <li class="resources-item">
+          <a href="#Support" class="resources-link">Support</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="site-pages">
+      <p class="headers">Company</p>
+      <ul class="pages-list">
+        <li class="pages-item">
+          <a href="#About" class="pages-link">About</a>
+        </li>
+        <li class="pages-item">
+          <a href="#OurTeam" class="pages-link">Our Team</a>
+        </li>
+        <li class="pages-item">
+          <a href="#Careers" class="pages-link">Careers</a>
+        </li>
+        <li class="pages-item">
+          <a href="#Contact" class="pages-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="site-socials">
+      <img src="images/icon-facebook.svg" alt="Facebook">
+      <img src="images/icon-twitter.svg" alt="Twitter">
+      <img src="images/icon-pinterest.svg" alt="Pinterest">
+      <img src="images/icon-instagram.svg" alt="Instagram">
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>

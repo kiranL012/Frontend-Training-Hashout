@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+    background-color: #ffe6ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background-color: lightyellow;
+    padding: 10px;
+}
+
+h1 {
+    color: rgb(255, 64, 0);
+}
+
+.container h3 {
+    background-color: aquamarine;
+    color: darkmagenta;
+    padding: 1%;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 0.8em;
+}
+
+/* .container {
+    font-size: 10px;
+} */
+
+p {
+    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
+    color: hsl(240, 100%, 20%);
+    font-size: 1.4rem;
+    font-weight: bolder;
+    line-height: 1.2em;
+}
+
+#second-p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkmagenta;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1em;
+}
+
+#box-model{
+    background-color: lightgray;
+    width: 300px;
+    border: 15px solid darkblue;
+    padding: 50px;
+    /* margin: 20px; */
+
+    /* margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px; */
+
+    margin: 5px 10px 5px 10px;
+
+    margin: 5px 10px;
+}
+
+.categories {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul {
+    padding: 0;
+    list-style: none;
+}
+
+.categories a {
+    text-decoration: none;
+    color: black;
+}
+
+.categories a:hover {
+    color: red;
+}
+
+.categories li {
+    padding: 6px 0;
+    border-bottom: 1px dotted #333;
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-form label {
+    display: block;
+    font-weight: bolder;
+}
+
+.my-form #name, .my-form #email, .my-form #message {
+    padding: 8px;
+    width: 100%;
+}
+
+.button{
+    padding: 10px 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.button:hover{
+    background-color: darkred;
+    cursor: pointer;
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+}
+
+.clearfix{
+    clear: both;
+}
+
+#main__block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+#side__bar{
+    float: right;
+    width: 30%;
+    padding: 15px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.position-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+    background-image: url('./images/grab.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.large-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    background-image: url('./images/unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.position-box h1 {
+    position: absolute;
+    top: 140px;
+    left: 200px;
+}
+
+.position-box h2 {
+    position: absolute;
+    bottom: 40px;
+    right: 200px;
+}
+
+.fixed-button{
+    position: fixed;
+    top: 20px;
+}
+
+.my-list li:first-child {
+    background: rebeccapurple;
+}
+
+.my-list li:last-child {
+    background: royalblue;
+}
+
+.my-list li:nth-child(5) {
+    background: yellowgreen;
+}
+
+.dynamic-list li:nth-child(even) {
+    background: yellowgreen;
+}
+
+.dynamic-list li:nth-child(odd) {
+    background: rgb(220, 233, 194);
+}
